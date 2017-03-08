@@ -8,6 +8,7 @@ from validator.Validator import validator, getMyIP
 from spider.ProxyCrawl import startProxyCrawl
 
 if __name__ == "__main__":
+    '''
     myip = getMyIP()
     DB_PROXY_NUM = Value('i', 0)
     q1 = Queue()
@@ -24,3 +25,6 @@ if __name__ == "__main__":
     p1.join()
     p2.join()
     p3.join()
+'''
+    from dashboard.index import app
+    app.run(debug=True)
